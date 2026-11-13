@@ -1,0 +1,20 @@
+# Command run by the CONSOLE when a player claims a spawner from their stash.
+# Placeholders: %player% = the claiming player, %type% = spawner type, %amount% = amount
+# Check the exact syntax in-game by typing /donutspawners:givespawner and edit this to match.
+spawner-command: "donutspawners:givespawner %player% %type% %amount%"
+
+gui-title: "&8Spawn Stash"
+
+messages:
+  no-permission: "&cYou don't have permission."
+  players-only: "&cOnly players can do that."
+  empty: "&7Your stash is empty."
+  inventory-full: "&cYour inventory is full! Make some room and try again."
+  command-failed: "&cCouldn't deliver that. Tell an admin (check spawner-command in config)."
+  claimed: "&aClaimed &f%name%&a!"
+  join-notify: "&6You have &e%count% &6item(s) waiting in your stash! Use &e/stash &6to claim them."
+  received: "&6You received &e%name% &6in your stash! Use &e/stash&6."
+  gave: "&aAdded &f%name% &ato &f%player%&a's stash."
+  player-not-found: "&cThat player has never joined this server."
+  reloaded: "&aSpawnStash config reloaded."
+  usage-admin: "&cUsage: /stash give <player> <type> [amount] | /stash additem <player> | /stash reload"

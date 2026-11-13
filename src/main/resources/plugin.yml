@@ -1,0 +1,18 @@
+name: SpawnStash
+version: 1.0
+main: com.spawnstash.SpawnStash
+api-version: '1.13'
+description: DonutSMP-style stash for spawners and items
+softdepend: [DonutSpawners]
+commands:
+  stash:
+    description: Open your stash or manage stashes
+    aliases: [spawnstash]
+    usage: /stash
+permissions:
+  spawnstash.use:
+    description: Open and claim from your own stash
+    default: true
+  spawnstash.admin:
+    description: Give spawners/items to stashes and reload
+    default: op
